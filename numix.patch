@@ -1,0 +1,310 @@
+diff --git a/gtk-2.0/gtkrc b/gtk-2.0/gtkrc
+index a77af3d..f9ef9a4 100644
+--- a/gtk-2.0/gtkrc
++++ b/gtk-2.0/gtkrc
+@@ -1,6 +1,6 @@
+ # Numix GTK Theme
+ 
+-gtk_color_scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#d64937\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
++gtk_color_scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#1793d1\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#fafafa\nmenu_fg_color:#333333\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
+ 
+ gtk-icon-sizes = "panel=16,16:gtk-button=16,16" # Icon sizes
+ gtk-button-images = 0 # Disables icons in buttons
+@@ -155,7 +155,7 @@ style "murrine-wider" {
+ 
+ style "murrine-notebook-bg" {
+ 	bg[NORMAL] = @base_color
+-	bg[ACTIVE] = shade (0.87, @base_color)
++	bg[ACTIVE] = shade (0.75, @base_color)
+ }
+ 
+ style "murrine-notebook" = "murrine-notebook-bg" {
+@@ -436,9 +436,9 @@ style "murrine-panel" {
+ 	ythickness = 1
+ 
+ 	bg[NORMAL] = @panel_bg_color
+-	bg[PRELIGHT] =  mix (0.21, @panel_fg_color, @panel_bg_color)
++	bg[PRELIGHT] =  mix (0.21, @selected_bg_color, @panel_bg_color)
+ 	bg[SELECTED] =  mix (0.21, @panel_fg_color, @panel_bg_color)
+-	bg[ACTIVE] = shade (0.9, @panel_bg_color)
++	bg[ACTIVE] = mix (0.5, @selected_bg_color, @panel_bg_color)
+ 	bg[INSENSITIVE] = @panel_bg_color
+ 
+ 	fg[NORMAL] = @panel_fg_color
+@@ -498,7 +498,7 @@ widget "*gimmie*" style "bold-panel-item"
+ # XFCE Styles
+ 
+ style "workspace-switcher" = "murrine-panel" {
+-	bg[SELECTED] = @selected_bg_color
++	bg[SELECTED] = shade (0.8, @selected_bg_color)
+ }
+ 
+ style "xfce-header" {
+diff --git a/gtk-3.0/gtk-dark.css b/gtk-3.0/gtk-dark.css
+index 41c1687..98ec230 100644
+--- a/gtk-3.0/gtk-dark.css
++++ b/gtk-3.0/gtk-dark.css
+@@ -3,7 +3,7 @@
+ @define-color bg_color #2d2d2d;
+ @define-color text_color #eeeeee;
+ @define-color fg_color #dcdcdc;
+-@define-color selected_bg_color #d64937;
++@define-color selected_bg_color #1793d1;
+ @define-color selected_fg_color #f9f9f9;
+ @define-color tooltip_bg_color #2d2d2d;
+ @define-color tooltip_fg_color #f9f9f9;
+diff --git a/gtk-3.0/gtk.css b/gtk-3.0/gtk.css
+index 76461f9..7f379b7 100644
+--- a/gtk-3.0/gtk.css
++++ b/gtk-3.0/gtk.css
+@@ -3,11 +3,22 @@
+ @define-color fg_color #555555;
+ @define-color base_color #f9f9f9;
+ @define-color text_color #333333;
+-@define-color selected_bg_color #d64937;
++@define-color selected_bg_color #1793d1;
+ @define-color selected_fg_color #f9f9f9;
+ @define-color tooltip_bg_color #2d2d2d;
+ @define-color tooltip_fg_color #f9f9f9;
+ 
++
++/* widget colors */
++@define-color menubar_bg_color #2d2d2d;
++@define-color menubar_fg_color #dcdcdc;
++@define-color toolbar_bg_color #dedede;
++@define-color toolbar_fg_color #555555;
++@define-color menu_bg_color #fafafa;
++@define-color menu_fg_color #333333;
++@define-color panel_bg_color #2d2d2d;
++@define-color panel_fg_color #dcdcdc;
++
+ /* colormap actually used by the theme, to be overridden in other css files */
+ @define-color theme_bg_color @bg_color;
+ @define-color theme_fg_color @fg_color;
+@@ -35,16 +46,6 @@
+ @define-color success_color #53a93f;
+ @define-color error_color #cc0000;
+ 
+-/* widget colors */
+-@define-color menubar_bg_color #2d2d2d;
+-@define-color menubar_fg_color #dcdcdc;
+-@define-color toolbar_bg_color #dedede;
+-@define-color toolbar_fg_color #555555;
+-@define-color menu_bg_color #2d2d2d;
+-@define-color menu_fg_color #dcdcdc;
+-@define-color panel_bg_color #2d2d2d;
+-@define-color panel_fg_color #dcdcdc;
+-
+ /* osd */
+ @define-color osd_base #2d2d2d;
+ @define-color osd_fg #dcdcdc;
+diff --git a/gtk-3.0/settings.ini b/gtk-3.0/settings.ini
+index 2530fd8..b5288c6 100644
+--- a/gtk-3.0/settings.ini
++++ b/gtk-3.0/settings.ini
+@@ -1,4 +1,5 @@
+ [Settings]
+-gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#d64937\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
++gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#1793d1\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#fafafa\nmenu_fg_color:#333333\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
++
+ gtk-auto-mnemonics = 1
+ gtk-visible-focus = automatic
+diff --git a/xfwm4/close-prelight.xpm b/xfwm4/close-prelight.xpm
+index 250c7f8..6263abc 100644
+--- a/xfwm4/close-prelight.xpm
++++ b/xfwm4/close-prelight.xpm
+@@ -3,21 +3,21 @@ static char * close_prelight_xpm[] = {
+ "16 16 17 1",
+ " 	c None",
+ ".	c #2D2D2D",
+-"+	c #D64937",
+-"@	c #A04034",
+-"#	c #3F302E",
+-"$	c #A34033",
+-"%	c #CC4736",
+-"&	c #50322F",
+-"*	c #40302D",
+-"=	c #CE4736",
+-"-	c #C94636",
+-";	c #57332F",
+-">	c #C84636",
+-",	c #CA4736",
+-"'	c #4F332F",
+-")	c #9E3F33",
+-"!	c #3C2F2D",
++"+	c #1793d1",
++"@	c #116d9c",
++"#	c #093b54",
++"$	c #116f9e",
++"%	c #168cc7",
++"&	c #08344a",
++"*	c #06293b",
++"=	c #168ec9",
++"-	c #168ac4",
++";	c #093952",
++">	c #1588c2",
++",	c #168ac4",
++"'	c #08344a",
++")	c #116c99",
++"!	c #062738",
+ "................",
+ "................",
+ "................",
+diff --git a/xfwm4/close-pressed.xpm b/xfwm4/close-pressed.xpm
+index f7c47d5..962f1b5 100644
+--- a/xfwm4/close-pressed.xpm
++++ b/xfwm4/close-pressed.xpm
+@@ -3,21 +3,21 @@ static char * close_pressed_xpm[] = {
+ "16 16 17 1",
+ " 	c None",
+ ".	c #2D2D2D",
+-"+	c #B44335",
+-"@	c #893C32",
+-"#	c #3B2F2E",
+-"$	c #8B3D33",
+-"%	c #AC4233",
+-"&	c #49312E",
+-"*	c #3C2F2D",
+-"=	c #AD4334",
+-"-	c #A94134",
+-";	c #4E322F",
+-">	c #A94135",
+-",	c #AA4134",
+-"'	c #47312E",
+-")	c #873B32",
+-"!	c #392E2D",
++"+	c #137aae",
++"@	c #0e5b82",
++"#	c #062433",
++"$	c #0e5d85",
++"%	c #1272a3",
++"&	c #072e42",
++"*	c #062636",
++"=	c #1274a6",
++"-	c #1271a1",
++";	c #083247",
++">	c #1271a1",
++",	c #1272a3",
++"'	c #072d40",
++")	c #0e5980",
++"!	c #052230",
+ "................",
+ "................",
+ "................",
+diff --git a/xfwm4/hide-prelight.xpm b/xfwm4/hide-prelight.xpm
+index 00568f4..f7e2a34 100644
+--- a/xfwm4/hide-prelight.xpm
++++ b/xfwm4/hide-prelight.xpm
+@@ -3,7 +3,7 @@ static char * hide_prelight_xpm[] = {
+ "16 16 3 1",
+ " 	c None",
+ ".	c #2D2D2D",
+-"+	c #D64937",
++"+	c #1793d1",
+ "................",
+ "................",
+ "................",
+diff --git a/xfwm4/hide-pressed.xpm b/xfwm4/hide-pressed.xpm
+index b499d8b..718ecf4 100644
+--- a/xfwm4/hide-pressed.xpm
++++ b/xfwm4/hide-pressed.xpm
+@@ -3,7 +3,7 @@ static char * hide_pressed_xpm[] = {
+ "16 16 3 1",
+ " 	c None",
+ ".	c #2D2D2D",
+-"+	c #B44335",
++"+	c #137aae",
+ "................",
+ "................",
+ "................",
+diff --git a/xfwm4/maximize-prelight.xpm b/xfwm4/maximize-prelight.xpm
+index 203179c..cd3cecf 100644
+--- a/xfwm4/maximize-prelight.xpm
++++ b/xfwm4/maximize-prelight.xpm
+@@ -3,7 +3,7 @@ static char * maximize_prelight_xpm[] = {
+ "16 16 3 1",
+ " 	c None",
+ ".	c #2D2D2D",
+-"+	c #D64937",
++"+	c #1793d1",
+ "................",
+ "................",
+ "................",
+diff --git a/xfwm4/maximize-pressed.xpm b/xfwm4/maximize-pressed.xpm
+index 18cdb1b..de42a58 100644
+--- a/xfwm4/maximize-pressed.xpm
++++ b/xfwm4/maximize-pressed.xpm
+@@ -3,7 +3,7 @@ static char * maximize_pressed_xpm[] = {
+ "16 16 3 1",
+ " 	c None",
+ ".	c #2D2D2D",
+-"+	c #B44335",
++"+	c #137aae",
+ "................",
+ "................",
+ "................",
+diff --git a/xfwm4/themerc b/xfwm4/themerc
+index b9879cd..6c91b14 100644
+--- a/xfwm4/themerc
++++ b/xfwm4/themerc
+@@ -6,7 +6,7 @@ active_text_color=#dcdcdc
+ inactive_text_color=#888888
+ button_offset=4
+ button_spacing=4
+-show_app_icon=true
++show_app_icon=false
+ full_width_title=true
+ maximized_offset=4
+ title_horizontal_offset=6
+diff --git a/xfwm4/top-left-active.xpm b/xfwm4/top-left-active.xpm
+index 2d98285..2c7a63f 100644
+--- a/xfwm4/top-left-active.xpm
++++ b/xfwm4/top-left-active.xpm
+@@ -4,7 +4,7 @@ static char * top_left_active_xpm[] = {
+ " 	c None",
+ ".	c #484848",
+ "+	c #2D2D2D",
+-" .",
++"..",
+ ".+",
+ ".+",
+ ".+",
+diff --git a/xfwm4/top-left-inactive.xpm b/xfwm4/top-left-inactive.xpm
+index a4cfd1c..f27581c 100644
+--- a/xfwm4/top-left-inactive.xpm
++++ b/xfwm4/top-left-inactive.xpm
+@@ -4,7 +4,7 @@ static char * top_left_inactive_xpm[] = {
+ " 	c None",
+ ".	c #393939",
+ "+	c #2D2D2D",
+-" .",
++"..",
+ ".+",
+ ".+",
+ ".+",
+diff --git a/xfwm4/top-right-active.xpm b/xfwm4/top-right-active.xpm
+index 071710e..a75b4c1 100644
+--- a/xfwm4/top-right-active.xpm
++++ b/xfwm4/top-right-active.xpm
+@@ -4,7 +4,7 @@ static char * top_right_active_xpm[] = {
+ " 	c None",
+ ".	c #484848",
+ "+	c #2D2D2D",
+-". ",
++"..",
+ "+.",
+ "+.",
+ "+.",
+diff --git a/xfwm4/top-right-inactive.xpm b/xfwm4/top-right-inactive.xpm
+index 95e48e1..6acfc54 100644
+--- a/xfwm4/top-right-inactive.xpm
++++ b/xfwm4/top-right-inactive.xpm
+@@ -4,7 +4,7 @@ static char * top_right_inactive_xpm[] = {
+ " 	c None",
+ ".	c #393939",
+ "+	c #2D2D2D",
+-". ",
++"..",
+ "+.",
+ "+.",
+ "+.",
