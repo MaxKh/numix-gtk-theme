@@ -430,8 +430,8 @@ style "murrine-panel" {
 
 	bg[NORMAL] = @panel_bg_color
 	bg[PRELIGHT] =  mix (0.21, @selected_bg_color, @panel_bg_color)
-	bg[SELECTED] =  mix (0.21, @panel_fg_color, @panel_bg_color)
-	bg[ACTIVE] = mix (0.5, @selected_bg_color, @panel_bg_color)
+	bg[SELECTED] = mix (0.35, @selected_bg_color, @panel_bg_color)
+	bg[ACTIVE] = mix (0.4, @selected_bg_color, @panel_bg_color)
 	bg[INSENSITIVE] = @panel_bg_color
 
 	fg[NORMAL] = @panel_fg_color
@@ -491,7 +491,7 @@ widget "*gimmie*" style "bold-panel-item"
 # XFCE Styles
 
 style "workspace-switcher" = "murrine-panel" {
-	bg[SELECTED] = shade (0.8, @selected_bg_color)
+	bg[SELECTED] = shade (0.4, @selected_bg_color)
 }
 
 style "xfce-header" {

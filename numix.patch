@@ -1,16 +1,14 @@
-diff --git a/gtk-2.0/gtkrc b/gtk-2.0/gtkrc
-index b6837bb..3dc0a92 100644
 --- a/gtk-2.0/gtkrc
 +++ b/gtk-2.0/gtkrc
 @@ -1,6 +1,6 @@
  # Numix GTK Theme
  
--gtk_color_scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#d64937\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
-+gtk_color_scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#1793d1\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#fafafa\nmenu_fg_color:#333333\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
+-gtk_color_scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#d64937\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#dedede\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
++gtk_color_scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#1793d1\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#dedede\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#fafafa\nmenu_fg_color:#333333\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
  
- gtk-icon-sizes = "panel=16,16:gtk-button=16,16" # Icon sizes
- gtk-button-images = 0 # Disables icons in buttons
-@@ -154,7 +154,7 @@ style "murrine-wider" {
+ # Default Style
+ 
+@@ -149,7 +149,7 @@ style "murrine-wider" {
  
  style "murrine-notebook-bg" {
  	bg[NORMAL] = @base_color
@@ -19,7 +17,7 @@ index b6837bb..3dc0a92 100644
  }
  
  style "murrine-notebook" = "murrine-notebook-bg" {
-@@ -434,9 +434,9 @@ style "murrine-panel" {
+@@ -429,9 +429,9 @@ style "murrine-panel" {
  	ythickness = 1
  
  	bg[NORMAL] = @panel_bg_color
@@ -31,7 +29,7 @@ index b6837bb..3dc0a92 100644
  	bg[INSENSITIVE] = @panel_bg_color
  
  	fg[NORMAL] = @panel_fg_color
-@@ -496,7 +496,7 @@ widget "*gimmie*" style "bold-panel-item"
+@@ -491,7 +491,7 @@ widget "*gimmie*" style "bold-panel-item"
  # XFCE Styles
  
  style "workspace-switcher" = "murrine-panel" {
@@ -40,8 +38,6 @@ index b6837bb..3dc0a92 100644
  }
  
  style "xfce-header" {
-diff --git a/gtk-3.0/assets/checkbox-checked-dark.svg b/gtk-3.0/assets/checkbox-checked-dark.svg
-index fc255b5..32de298 100644
 --- a/gtk-3.0/assets/checkbox-checked-dark.svg
 +++ b/gtk-3.0/assets/checkbox-checked-dark.svg
 @@ -114,7 +114,7 @@
@@ -53,8 +49,6 @@ index fc255b5..32de298 100644
         d="m 11.653408,1040.2805 c -0.365873,0.01 -0.727323,0.1623 -0.985551,0.4266 l -4.0292904,3.8367 -1.3822187,-1.5489 c -0.4918947,-0.656 -1.5705595,-0.7265 -2.1406524,-0.14 -0.5700929,0.5865 -0.4910061,1.6854 0.1569519,2.1808 l 2.3831825,2.5599 c 0.9369248,0.9369 1.3590497,0.8116 2.3049741,-0.1343 0,0 3.250459,-3.9103 5.155609,-5.232 0.421127,-0.3992 0.596878,-0.5102 0.377676,-1.0522 -0.219202,-0.542 -1.265927,-0.916 -1.840681,-0.8966 z"
         id="path5174"
         inkscape:connector-curvature="0"
-diff --git a/gtk-3.0/assets/checkbox-checked.svg b/gtk-3.0/assets/checkbox-checked.svg
-index 333caea..0b94650 100644
 --- a/gtk-3.0/assets/checkbox-checked.svg
 +++ b/gtk-3.0/assets/checkbox-checked.svg
 @@ -115,7 +115,7 @@
@@ -66,8 +60,6 @@ index 333caea..0b94650 100644
         d="m 11.653408,1040.2805 c -0.365873,0.01 -0.727323,0.1623 -0.985551,0.4266 l -4.0292904,3.8367 -1.3822187,-1.5489 c -0.4918947,-0.656 -1.5705595,-0.7265 -2.1406524,-0.14 -0.5700929,0.5865 -0.4910061,1.6854 0.1569519,2.1808 l 2.3831825,2.5599 c 0.9369248,0.9369 1.3590497,0.8116 2.3049741,-0.1343 0,0 3.250459,-3.9103 5.155609,-5.232 0.421127,-0.3992 0.596878,-0.5102 0.377676,-1.0522 -0.219202,-0.542 -1.265927,-0.916 -1.840681,-0.8966 z"
         id="path5174"
         inkscape:connector-curvature="0"
-diff --git a/gtk-3.0/assets/checkbox-mixed-dark.svg b/gtk-3.0/assets/checkbox-mixed-dark.svg
-index 3217e1c..6ec5e4c 100644
 --- a/gtk-3.0/assets/checkbox-mixed-dark.svg
 +++ b/gtk-3.0/assets/checkbox-mixed-dark.svg
 @@ -114,7 +114,7 @@
@@ -79,8 +71,6 @@ index 3217e1c..6ec5e4c 100644
         id="rect3931"
         width="8"
         height="2"
-diff --git a/gtk-3.0/assets/checkbox-mixed.svg b/gtk-3.0/assets/checkbox-mixed.svg
-index facaf36..2633dbd 100644
 --- a/gtk-3.0/assets/checkbox-mixed.svg
 +++ b/gtk-3.0/assets/checkbox-mixed.svg
 @@ -128,7 +128,7 @@
@@ -92,8 +82,6 @@ index facaf36..2633dbd 100644
         id="rect3931"
         width="8"
         height="2"
-diff --git a/gtk-3.0/assets/grid-selection-checked-dark.svg b/gtk-3.0/assets/grid-selection-checked-dark.svg
-index fc83916..624f7e6 100644
 --- a/gtk-3.0/assets/grid-selection-checked-dark.svg
 +++ b/gtk-3.0/assets/grid-selection-checked-dark.svg
 @@ -115,7 +115,7 @@
@@ -105,8 +93,6 @@ index fc83916..624f7e6 100644
         d="m 29.13352,1022.158 c -0.914683,0.025 -1.818308,0.4057 -2.463877,1.0665 l -10.073226,9.5917 -3.455547,-3.8722 c -1.229737,-1.64 -3.926399,-1.8163 -5.3516312,-0.35 -1.4252323,1.4662 -1.2275153,4.2135 0.3923797,5.452 l 5.9579565,6.3997 c 2.342312,2.3423 3.397624,2.029 5.762435,-0.3357 0,0 8.126148,-9.7758 12.889022,-13.08 1.052818,-0.998 1.492196,-1.2755 0.94419,-2.6305 -0.548004,-1.355 -3.164817,-2.29 -4.601702,-2.2415 z"
         id="path5174"
         inkscape:connector-curvature="0"
-diff --git a/gtk-3.0/assets/grid-selection-checked.svg b/gtk-3.0/assets/grid-selection-checked.svg
-index 75b5f2d..6d1b15d 100644
 --- a/gtk-3.0/assets/grid-selection-checked.svg
 +++ b/gtk-3.0/assets/grid-selection-checked.svg
 @@ -115,7 +115,7 @@
@@ -118,8 +104,6 @@ index 75b5f2d..6d1b15d 100644
         d="m 29.13352,1022.158 c -0.914683,0.025 -1.818308,0.4057 -2.463877,1.0665 l -10.073226,9.5917 -3.455547,-3.8722 c -1.229737,-1.64 -3.926399,-1.8163 -5.3516312,-0.35 -1.4252323,1.4662 -1.2275153,4.2135 0.3923797,5.452 l 5.9579565,6.3997 c 2.342312,2.3423 3.397624,2.029 5.762435,-0.3357 0,0 8.126148,-9.7758 12.889022,-13.08 1.052818,-0.998 1.492196,-1.2755 0.94419,-2.6305 -0.548004,-1.355 -3.164817,-2.29 -4.601702,-2.2415 z"
         id="path5174"
         inkscape:connector-curvature="0"
-diff --git a/gtk-3.0/assets/menuitem-checkbox-checked.svg b/gtk-3.0/assets/menuitem-checkbox-checked.svg
-index ba00b66..4d3cf73 100644
 --- a/gtk-3.0/assets/menuitem-checkbox-checked.svg
 +++ b/gtk-3.0/assets/menuitem-checkbox-checked.svg
 @@ -100,7 +100,7 @@
@@ -131,8 +115,6 @@ index ba00b66..4d3cf73 100644
         d="m 11.653408,1040.2805 c -0.365873,0.01 -0.727323,0.1623 -0.985551,0.4266 l -4.0292904,3.8367 -1.3822187,-1.5489 c -0.4918947,-0.656 -1.5705595,-0.7265 -2.1406524,-0.14 -0.5700929,0.5865 -0.4910061,1.6854 0.1569519,2.1808 l 2.3831825,2.5599 c 0.9369248,0.9369 1.3590497,0.8116 2.3049741,-0.1343 0,0 3.250459,-3.9103 5.155609,-5.232 0.421127,-0.3992 0.596878,-0.5102 0.377676,-1.0522 -0.219202,-0.542 -1.265927,-0.916 -1.840681,-0.8966 z"
         id="path5174"
         inkscape:connector-curvature="0"
-diff --git a/gtk-3.0/assets/menuitem-checkbox-mixed.svg b/gtk-3.0/assets/menuitem-checkbox-mixed.svg
-index ec2672b..0a010a8 100644
 --- a/gtk-3.0/assets/menuitem-checkbox-mixed.svg
 +++ b/gtk-3.0/assets/menuitem-checkbox-mixed.svg
 @@ -96,7 +96,7 @@
@@ -144,8 +126,6 @@ index ec2672b..0a010a8 100644
         id="rect3931"
         width="8"
         height="2"
-diff --git a/gtk-3.0/assets/menuitem-radio-checked.svg b/gtk-3.0/assets/menuitem-radio-checked.svg
-index 265a2a2..8a66454 100644
 --- a/gtk-3.0/assets/menuitem-radio-checked.svg
 +++ b/gtk-3.0/assets/menuitem-radio-checked.svg
 @@ -98,7 +98,7 @@
@@ -157,8 +137,6 @@ index 265a2a2..8a66454 100644
         id="path3833"
         sodipodi:cx="8"
         sodipodi:cy="8"
-diff --git a/gtk-3.0/assets/radio-mixed-dark.svg b/gtk-3.0/assets/radio-mixed-dark.svg
-index e76dcf6..8d50434 100644
 --- a/gtk-3.0/assets/radio-mixed-dark.svg
 +++ b/gtk-3.0/assets/radio-mixed-dark.svg
 @@ -104,7 +104,7 @@
@@ -170,8 +148,6 @@ index e76dcf6..8d50434 100644
         id="rect3931"
         width="8"
         height="2"
-diff --git a/gtk-3.0/assets/radio-mixed.svg b/gtk-3.0/assets/radio-mixed.svg
-index 84f5db8..5406223 100644
 --- a/gtk-3.0/assets/radio-mixed.svg
 +++ b/gtk-3.0/assets/radio-mixed.svg
 @@ -111,7 +111,7 @@
@@ -183,8 +159,6 @@ index 84f5db8..5406223 100644
         id="rect3931"
         width="8"
         height="2"
-diff --git a/gtk-3.0/assets/radio-selected-dark.svg b/gtk-3.0/assets/radio-selected-dark.svg
-index ef9e53b..5005a58 100644
 --- a/gtk-3.0/assets/radio-selected-dark.svg
 +++ b/gtk-3.0/assets/radio-selected-dark.svg
 @@ -93,7 +93,7 @@
@@ -196,8 +170,6 @@ index ef9e53b..5005a58 100644
         id="path3833"
         sodipodi:cx="8"
         sodipodi:cy="8"
-diff --git a/gtk-3.0/assets/radio-selected.svg b/gtk-3.0/assets/radio-selected.svg
-index 965f8c8..5f1f85e 100644
 --- a/gtk-3.0/assets/radio-selected.svg
 +++ b/gtk-3.0/assets/radio-selected.svg
 @@ -101,7 +101,7 @@
@@ -209,21 +181,17 @@ index 965f8c8..5f1f85e 100644
         id="path3833"
         sodipodi:cx="8"
         sodipodi:cy="8"
-diff --git a/gtk-3.0/gtk-dark.css b/gtk-3.0/gtk-dark.css
-index c343306..3cb2262 100644
 --- a/gtk-3.0/gtk-dark.css
 +++ b/gtk-3.0/gtk-dark.css
 @@ -3,7 +3,7 @@
  @define-color bg_color #2d2d2d;
- @define-color text_color #eeeeee;
+ @define-color text_color #dedede;
  @define-color fg_color #dcdcdc;
 -@define-color selected_bg_color #d64937;
 +@define-color selected_bg_color #1793d1;
  @define-color selected_fg_color #f9f9f9;
  @define-color tooltip_bg_color #2d2d2d;
- @define-color tooltip_fg_color #f9f9f9;
-diff --git a/gtk-3.0/gtk.css b/gtk-3.0/gtk.css
-index 6dd524d..e23e248 100644
+ @define-color tooltip_fg_color #dedede;
 --- a/gtk-3.0/gtk.css
 +++ b/gtk-3.0/gtk.css
 @@ -3,11 +3,22 @@
@@ -234,7 +202,7 @@ index 6dd524d..e23e248 100644
 +@define-color selected_bg_color #1793d1;
  @define-color selected_fg_color #f9f9f9;
  @define-color tooltip_bg_color #2d2d2d;
- @define-color tooltip_fg_color #f9f9f9;
+ @define-color tooltip_fg_color #dedede;
  
 +
 +/* widget colors */
@@ -267,22 +235,499 @@ index 6dd524d..e23e248 100644
  /* osd */
  @define-color osd_base #2d2d2d;
  @define-color osd_fg #dcdcdc;
-diff --git a/gtk-3.0/settings.ini b/gtk-3.0/settings.ini
-index 2530fd8..b5288c6 100644
 --- a/gtk-3.0/settings.ini
 +++ b/gtk-3.0/settings.ini
-@@ -1,4 +1,5 @@
+@@ -1,4 +1,4 @@
  [Settings]
--gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#d64937\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
-+gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#1793d1\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#fafafa\nmenu_fg_color:#333333\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
-+
+-gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#d64937\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#dedede\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
++gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#1793d1\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#dedede\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#fafafa\nmenu_fg_color:#333333\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
  gtk-auto-mnemonics = 1
  gtk-visible-focus = automatic
-diff --git a/numix.patch b/numix.patch
-new file mode 100644
-index 0000000..306d585
-diff --git a/xfwm4/close-prelight.xpm b/xfwm4/close-prelight.xpm
-index 250c7f8..6263abc 100644
+--- /dev/null
++++ b/numix.patch
+@@ -0,0 +1,482 @@
++diff --git a/gtk-2.0/gtkrc b/gtk-2.0/gtkrc
++index b6837bb..3dc0a92 100644
++--- a/gtk-2.0/gtkrc
+++++ b/gtk-2.0/gtkrc
++@@ -1,6 +1,6 @@
++ # Numix GTK Theme
++ 
++-gtk_color_scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#d64937\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
+++gtk_color_scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#1793d1\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#fafafa\nmenu_fg_color:#333333\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
++ 
++ gtk-icon-sizes = "panel=16,16:gtk-button=16,16" # Icon sizes
++ gtk-button-images = 0 # Disables icons in buttons
++@@ -154,7 +154,7 @@ style "murrine-wider" {
++ 
++ style "murrine-notebook-bg" {
++ 	bg[NORMAL] = @base_color
++-	bg[ACTIVE] = shade (0.87, @base_color)
+++	bg[ACTIVE] = shade (0.75, @base_color)
++ }
++ 
++ style "murrine-notebook" = "murrine-notebook-bg" {
++@@ -434,9 +434,9 @@ style "murrine-panel" {
++ 	ythickness = 1
++ 
++ 	bg[NORMAL] = @panel_bg_color
++-	bg[PRELIGHT] =  mix (0.21, @panel_fg_color, @panel_bg_color)
+++	bg[PRELIGHT] =  mix (0.21, @selected_bg_color, @panel_bg_color)
++ 	bg[SELECTED] =  mix (0.21, @panel_fg_color, @panel_bg_color)
++-	bg[ACTIVE] = shade (0.9, @panel_bg_color)
+++	bg[ACTIVE] = mix (0.5, @selected_bg_color, @panel_bg_color)
++ 	bg[INSENSITIVE] = @panel_bg_color
++ 
++ 	fg[NORMAL] = @panel_fg_color
++@@ -496,7 +496,7 @@ widget "*gimmie*" style "bold-panel-item"
++ # XFCE Styles
++ 
++ style "workspace-switcher" = "murrine-panel" {
++-	bg[SELECTED] = @selected_bg_color
+++	bg[SELECTED] = shade (0.8, @selected_bg_color)
++ }
++ 
++ style "xfce-header" {
++diff --git a/gtk-3.0/assets/checkbox-checked-dark.svg b/gtk-3.0/assets/checkbox-checked-dark.svg
++index fc255b5..32de298 100644
++--- a/gtk-3.0/assets/checkbox-checked-dark.svg
+++++ b/gtk-3.0/assets/checkbox-checked-dark.svg
++@@ -114,7 +114,7 @@
++        transform="translate(0,1036.3622)"
++        id="rect3752" />
++     <path
++-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#d64937;fill-opacity:1;stroke:none;stroke-width:2.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+++       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#1793d1;fill-opacity:1;stroke:none;stroke-width:2.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
++        d="m 11.653408,1040.2805 c -0.365873,0.01 -0.727323,0.1623 -0.985551,0.4266 l -4.0292904,3.8367 -1.3822187,-1.5489 c -0.4918947,-0.656 -1.5705595,-0.7265 -2.1406524,-0.14 -0.5700929,0.5865 -0.4910061,1.6854 0.1569519,2.1808 l 2.3831825,2.5599 c 0.9369248,0.9369 1.3590497,0.8116 2.3049741,-0.1343 0,0 3.250459,-3.9103 5.155609,-5.232 0.421127,-0.3992 0.596878,-0.5102 0.377676,-1.0522 -0.219202,-0.542 -1.265927,-0.916 -1.840681,-0.8966 z"
++        id="path5174"
++        inkscape:connector-curvature="0"
++diff --git a/gtk-3.0/assets/checkbox-checked.svg b/gtk-3.0/assets/checkbox-checked.svg
++index 333caea..0b94650 100644
++--- a/gtk-3.0/assets/checkbox-checked.svg
+++++ b/gtk-3.0/assets/checkbox-checked.svg
++@@ -115,7 +115,7 @@
++        transform="translate(0,1036.3622)"
++        id="rect3752" />
++     <path
++-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#d64937;fill-opacity:1;stroke:none;stroke-width:2.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+++       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#1793d1;fill-opacity:1;stroke:none;stroke-width:2.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
++        d="m 11.653408,1040.2805 c -0.365873,0.01 -0.727323,0.1623 -0.985551,0.4266 l -4.0292904,3.8367 -1.3822187,-1.5489 c -0.4918947,-0.656 -1.5705595,-0.7265 -2.1406524,-0.14 -0.5700929,0.5865 -0.4910061,1.6854 0.1569519,2.1808 l 2.3831825,2.5599 c 0.9369248,0.9369 1.3590497,0.8116 2.3049741,-0.1343 0,0 3.250459,-3.9103 5.155609,-5.232 0.421127,-0.3992 0.596878,-0.5102 0.377676,-1.0522 -0.219202,-0.542 -1.265927,-0.916 -1.840681,-0.8966 z"
++        id="path5174"
++        inkscape:connector-curvature="0"
++diff --git a/gtk-3.0/assets/checkbox-mixed-dark.svg b/gtk-3.0/assets/checkbox-mixed-dark.svg
++index 3217e1c..6ec5e4c 100644
++--- a/gtk-3.0/assets/checkbox-mixed-dark.svg
+++++ b/gtk-3.0/assets/checkbox-mixed-dark.svg
++@@ -114,7 +114,7 @@
++        transform="translate(0,1036.3622)"
++        id="rect3752" />
++     <rect
++-       style="fill:#d64937;fill-opacity:1;stroke:none"
+++       style="fill:#1793d1;fill-opacity:1;stroke:none"
++        id="rect3931"
++        width="8"
++        height="2"
++diff --git a/gtk-3.0/assets/checkbox-mixed.svg b/gtk-3.0/assets/checkbox-mixed.svg
++index facaf36..2633dbd 100644
++--- a/gtk-3.0/assets/checkbox-mixed.svg
+++++ b/gtk-3.0/assets/checkbox-mixed.svg
++@@ -128,7 +128,7 @@
++        transform="translate(0,1036.3622)"
++        id="rect3752" />
++     <rect
++-       style="fill:#d64937;fill-opacity:1;stroke:none"
+++       style="fill:#1793d1;fill-opacity:1;stroke:none"
++        id="rect3931"
++        width="8"
++        height="2"
++diff --git a/gtk-3.0/assets/grid-selection-checked-dark.svg b/gtk-3.0/assets/grid-selection-checked-dark.svg
++index fc83916..624f7e6 100644
++--- a/gtk-3.0/assets/grid-selection-checked-dark.svg
+++++ b/gtk-3.0/assets/grid-selection-checked-dark.svg
++@@ -115,7 +115,7 @@
++        inkscape:connector-curvature="0"
++        sodipodi:nodetypes="ssssssssssssssssss" />
++     <path
++-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#d64937;fill-opacity:1;stroke:none;stroke-width:2.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+++       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#1793d1;fill-opacity:1;stroke:none;stroke-width:2.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
++        d="m 29.13352,1022.158 c -0.914683,0.025 -1.818308,0.4057 -2.463877,1.0665 l -10.073226,9.5917 -3.455547,-3.8722 c -1.229737,-1.64 -3.926399,-1.8163 -5.3516312,-0.35 -1.4252323,1.4662 -1.2275153,4.2135 0.3923797,5.452 l 5.9579565,6.3997 c 2.342312,2.3423 3.397624,2.029 5.762435,-0.3357 0,0 8.126148,-9.7758 12.889022,-13.08 1.052818,-0.998 1.492196,-1.2755 0.94419,-2.6305 -0.548004,-1.355 -3.164817,-2.29 -4.601702,-2.2415 z"
++        id="path5174"
++        inkscape:connector-curvature="0"
++diff --git a/gtk-3.0/assets/grid-selection-checked.svg b/gtk-3.0/assets/grid-selection-checked.svg
++index 75b5f2d..6d1b15d 100644
++--- a/gtk-3.0/assets/grid-selection-checked.svg
+++++ b/gtk-3.0/assets/grid-selection-checked.svg
++@@ -115,7 +115,7 @@
++        inkscape:connector-curvature="0"
++        sodipodi:nodetypes="ssssssssssssssssss" />
++     <path
++-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#d64937;fill-opacity:1;stroke:none;stroke-width:2.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+++       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#1793d1;fill-opacity:1;stroke:none;stroke-width:2.9000001;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
++        d="m 29.13352,1022.158 c -0.914683,0.025 -1.818308,0.4057 -2.463877,1.0665 l -10.073226,9.5917 -3.455547,-3.8722 c -1.229737,-1.64 -3.926399,-1.8163 -5.3516312,-0.35 -1.4252323,1.4662 -1.2275153,4.2135 0.3923797,5.452 l 5.9579565,6.3997 c 2.342312,2.3423 3.397624,2.029 5.762435,-0.3357 0,0 8.126148,-9.7758 12.889022,-13.08 1.052818,-0.998 1.492196,-1.2755 0.94419,-2.6305 -0.548004,-1.355 -3.164817,-2.29 -4.601702,-2.2415 z"
++        id="path5174"
++        inkscape:connector-curvature="0"
++diff --git a/gtk-3.0/assets/menuitem-checkbox-checked.svg b/gtk-3.0/assets/menuitem-checkbox-checked.svg
++index ba00b66..4d3cf73 100644
++--- a/gtk-3.0/assets/menuitem-checkbox-checked.svg
+++++ b/gtk-3.0/assets/menuitem-checkbox-checked.svg
++@@ -100,7 +100,7 @@
++      id="layer1"
++      transform="translate(0,-1036.3622)">
++     <path
++-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#d64937;fill-opacity:1;stroke:none;stroke-width:2.90000010000000019;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+++       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#1793d1;fill-opacity:1;stroke:none;stroke-width:2.90000010000000019;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
++        d="m 11.653408,1040.2805 c -0.365873,0.01 -0.727323,0.1623 -0.985551,0.4266 l -4.0292904,3.8367 -1.3822187,-1.5489 c -0.4918947,-0.656 -1.5705595,-0.7265 -2.1406524,-0.14 -0.5700929,0.5865 -0.4910061,1.6854 0.1569519,2.1808 l 2.3831825,2.5599 c 0.9369248,0.9369 1.3590497,0.8116 2.3049741,-0.1343 0,0 3.250459,-3.9103 5.155609,-5.232 0.421127,-0.3992 0.596878,-0.5102 0.377676,-1.0522 -0.219202,-0.542 -1.265927,-0.916 -1.840681,-0.8966 z"
++        id="path5174"
++        inkscape:connector-curvature="0"
++diff --git a/gtk-3.0/assets/menuitem-checkbox-mixed.svg b/gtk-3.0/assets/menuitem-checkbox-mixed.svg
++index ec2672b..0a010a8 100644
++--- a/gtk-3.0/assets/menuitem-checkbox-mixed.svg
+++++ b/gtk-3.0/assets/menuitem-checkbox-mixed.svg
++@@ -96,7 +96,7 @@
++        x="4"
++        y="1043.4515" />
++     <rect
++-       style="fill:#d64937;fill-opacity:1;stroke:none"
+++       style="fill:#1793d1;fill-opacity:1;stroke:none"
++        id="rect3931"
++        width="8"
++        height="2"
++diff --git a/gtk-3.0/assets/menuitem-radio-checked.svg b/gtk-3.0/assets/menuitem-radio-checked.svg
++index 265a2a2..8a66454 100644
++--- a/gtk-3.0/assets/menuitem-radio-checked.svg
+++++ b/gtk-3.0/assets/menuitem-radio-checked.svg
++@@ -98,7 +98,7 @@
++      transform="translate(0,-1036.3622)">
++     <path
++        sodipodi:type="arc"
++-       style="fill:#d64937;fill-opacity:1;stroke:none"
+++       style="fill:#1793d1;fill-opacity:1;stroke:none"
++        id="path3833"
++        sodipodi:cx="8"
++        sodipodi:cy="8"
++diff --git a/gtk-3.0/assets/radio-mixed-dark.svg b/gtk-3.0/assets/radio-mixed-dark.svg
++index e76dcf6..8d50434 100644
++--- a/gtk-3.0/assets/radio-mixed-dark.svg
+++++ b/gtk-3.0/assets/radio-mixed-dark.svg
++@@ -104,7 +104,7 @@
++        transform="translate(0,1036.3622)"
++        id="path3008" />
++     <rect
++-       style="fill:#d64937;fill-opacity:1;stroke:none"
+++       style="fill:#1793d1;fill-opacity:1;stroke:none"
++        id="rect3931"
++        width="8"
++        height="2"
++diff --git a/gtk-3.0/assets/radio-mixed.svg b/gtk-3.0/assets/radio-mixed.svg
++index 84f5db8..5406223 100644
++--- a/gtk-3.0/assets/radio-mixed.svg
+++++ b/gtk-3.0/assets/radio-mixed.svg
++@@ -111,7 +111,7 @@
++        x="4"
++        y="1043.4515" />
++     <rect
++-       style="fill:#d64937;fill-opacity:1;stroke:none"
+++       style="fill:#1793d1;fill-opacity:1;stroke:none"
++        id="rect3931"
++        width="8"
++        height="2"
++diff --git a/gtk-3.0/assets/radio-selected-dark.svg b/gtk-3.0/assets/radio-selected-dark.svg
++index ef9e53b..5005a58 100644
++--- a/gtk-3.0/assets/radio-selected-dark.svg
+++++ b/gtk-3.0/assets/radio-selected-dark.svg
++@@ -93,7 +93,7 @@
++        id="path3008" />
++     <path
++        sodipodi:type="arc"
++-       style="fill:#d64937;fill-opacity:1;stroke:none"
+++       style="fill:#1793d1;fill-opacity:1;stroke:none"
++        id="path3833"
++        sodipodi:cx="8"
++        sodipodi:cy="8"
++diff --git a/gtk-3.0/assets/radio-selected.svg b/gtk-3.0/assets/radio-selected.svg
++index 965f8c8..5f1f85e 100644
++--- a/gtk-3.0/assets/radio-selected.svg
+++++ b/gtk-3.0/assets/radio-selected.svg
++@@ -101,7 +101,7 @@
++        id="path3008" />
++     <path
++        sodipodi:type="arc"
++-       style="fill:#d64937;fill-opacity:1;stroke:none"
+++       style="fill:#1793d1;fill-opacity:1;stroke:none"
++        id="path3833"
++        sodipodi:cx="8"
++        sodipodi:cy="8"
++diff --git a/gtk-3.0/gtk-dark.css b/gtk-3.0/gtk-dark.css
++index c343306..3cb2262 100644
++--- a/gtk-3.0/gtk-dark.css
+++++ b/gtk-3.0/gtk-dark.css
++@@ -3,7 +3,7 @@
++ @define-color bg_color #2d2d2d;
++ @define-color text_color #eeeeee;
++ @define-color fg_color #dcdcdc;
++-@define-color selected_bg_color #d64937;
+++@define-color selected_bg_color #1793d1;
++ @define-color selected_fg_color #f9f9f9;
++ @define-color tooltip_bg_color #2d2d2d;
++ @define-color tooltip_fg_color #f9f9f9;
++diff --git a/gtk-3.0/gtk.css b/gtk-3.0/gtk.css
++index 6dd524d..e23e248 100644
++--- a/gtk-3.0/gtk.css
+++++ b/gtk-3.0/gtk.css
++@@ -3,11 +3,22 @@
++ @define-color fg_color #555555;
++ @define-color base_color #f9f9f9;
++ @define-color text_color #333333;
++-@define-color selected_bg_color #d64937;
+++@define-color selected_bg_color #1793d1;
++ @define-color selected_fg_color #f9f9f9;
++ @define-color tooltip_bg_color #2d2d2d;
++ @define-color tooltip_fg_color #f9f9f9;
++ 
+++
+++/* widget colors */
+++@define-color menubar_bg_color #2d2d2d;
+++@define-color menubar_fg_color #dcdcdc;
+++@define-color toolbar_bg_color #dedede;
+++@define-color toolbar_fg_color #555555;
+++@define-color menu_bg_color #fafafa;
+++@define-color menu_fg_color #333333;
+++@define-color panel_bg_color #2d2d2d;
+++@define-color panel_fg_color #dcdcdc;
+++
++ /* colormap actually used by the theme, to be overridden in other css files */
++ @define-color theme_bg_color @bg_color;
++ @define-color theme_fg_color @fg_color;
++@@ -36,16 +47,6 @@
++ @define-color warning_color #f57900;
++ @define-color error_color #cc0000;
++ 
++-/* widget colors */
++-@define-color menubar_bg_color #2d2d2d;
++-@define-color menubar_fg_color #dcdcdc;
++-@define-color toolbar_bg_color #dedede;
++-@define-color toolbar_fg_color #555555;
++-@define-color menu_bg_color #2d2d2d;
++-@define-color menu_fg_color #dcdcdc;
++-@define-color panel_bg_color #2d2d2d;
++-@define-color panel_fg_color #dcdcdc;
++-
++ /* osd */
++ @define-color osd_base #2d2d2d;
++ @define-color osd_fg #dcdcdc;
++diff --git a/gtk-3.0/settings.ini b/gtk-3.0/settings.ini
++index 2530fd8..b5288c6 100644
++--- a/gtk-3.0/settings.ini
+++++ b/gtk-3.0/settings.ini
++@@ -1,4 +1,5 @@
++ [Settings]
++-gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#d64937\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
+++gtk-color-scheme = "base_color:#f9f9f9\nbg_color:#dedede\ntooltip_bg_color:#2d2d2d\nselected_bg_color:#1793d1\ntext_color:#333333\nfg_color:#555555\ntooltip_fg_color:#f9f9f9\nselected_fg_color:#f9f9f9\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#fafafa\nmenu_fg_color:#333333\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
+++
++ gtk-auto-mnemonics = 1
++ gtk-visible-focus = automatic
++diff --git a/numix.patch b/numix.patch
++new file mode 100644
++index 0000000..306d585
++diff --git a/xfwm4/close-prelight.xpm b/xfwm4/close-prelight.xpm
++index 250c7f8..6263abc 100644
++--- a/xfwm4/close-prelight.xpm
+++++ b/xfwm4/close-prelight.xpm
++@@ -3,21 +3,21 @@ static char * close_prelight_xpm[] = {
++ "16 16 17 1",
++ " 	c None",
++ ".	c #2D2D2D",
++-"+	c #D64937",
++-"@	c #A04034",
++-"#	c #3F302E",
++-"$	c #A34033",
++-"%	c #CC4736",
++-"&	c #50322F",
++-"*	c #40302D",
++-"=	c #CE4736",
++-"-	c #C94636",
++-";	c #57332F",
++-">	c #C84636",
++-",	c #CA4736",
++-"'	c #4F332F",
++-")	c #9E3F33",
++-"!	c #3C2F2D",
+++"+	c #1793d1",
+++"@	c #116d9c",
+++"#	c #093b54",
+++"$	c #116f9e",
+++"%	c #168cc7",
+++"&	c #08344a",
+++"*	c #06293b",
+++"=	c #168ec9",
+++"-	c #168ac4",
+++";	c #093952",
+++">	c #1588c2",
+++",	c #168ac4",
+++"'	c #08344a",
+++")	c #116c99",
+++"!	c #062738",
++ "................",
++ "................",
++ "................",
++diff --git a/xfwm4/close-pressed.xpm b/xfwm4/close-pressed.xpm
++index f7c47d5..962f1b5 100644
++--- a/xfwm4/close-pressed.xpm
+++++ b/xfwm4/close-pressed.xpm
++@@ -3,21 +3,21 @@ static char * close_pressed_xpm[] = {
++ "16 16 17 1",
++ " 	c None",
++ ".	c #2D2D2D",
++-"+	c #B44335",
++-"@	c #893C32",
++-"#	c #3B2F2E",
++-"$	c #8B3D33",
++-"%	c #AC4233",
++-"&	c #49312E",
++-"*	c #3C2F2D",
++-"=	c #AD4334",
++-"-	c #A94134",
++-";	c #4E322F",
++-">	c #A94135",
++-",	c #AA4134",
++-"'	c #47312E",
++-")	c #873B32",
++-"!	c #392E2D",
+++"+	c #137aae",
+++"@	c #0e5b82",
+++"#	c #062433",
+++"$	c #0e5d85",
+++"%	c #1272a3",
+++"&	c #072e42",
+++"*	c #062636",
+++"=	c #1274a6",
+++"-	c #1271a1",
+++";	c #083247",
+++">	c #1271a1",
+++",	c #1272a3",
+++"'	c #072d40",
+++")	c #0e5980",
+++"!	c #052230",
++ "................",
++ "................",
++ "................",
++diff --git a/xfwm4/hide-prelight.xpm b/xfwm4/hide-prelight.xpm
++index 00568f4..f7e2a34 100644
++--- a/xfwm4/hide-prelight.xpm
+++++ b/xfwm4/hide-prelight.xpm
++@@ -3,7 +3,7 @@ static char * hide_prelight_xpm[] = {
++ "16 16 3 1",
++ " 	c None",
++ ".	c #2D2D2D",
++-"+	c #D64937",
+++"+	c #1793d1",
++ "................",
++ "................",
++ "................",
++diff --git a/xfwm4/hide-pressed.xpm b/xfwm4/hide-pressed.xpm
++index b499d8b..718ecf4 100644
++--- a/xfwm4/hide-pressed.xpm
+++++ b/xfwm4/hide-pressed.xpm
++@@ -3,7 +3,7 @@ static char * hide_pressed_xpm[] = {
++ "16 16 3 1",
++ " 	c None",
++ ".	c #2D2D2D",
++-"+	c #B44335",
+++"+	c #137aae",
++ "................",
++ "................",
++ "................",
++diff --git a/xfwm4/maximize-prelight.xpm b/xfwm4/maximize-prelight.xpm
++index 203179c..cd3cecf 100644
++--- a/xfwm4/maximize-prelight.xpm
+++++ b/xfwm4/maximize-prelight.xpm
++@@ -3,7 +3,7 @@ static char * maximize_prelight_xpm[] = {
++ "16 16 3 1",
++ " 	c None",
++ ".	c #2D2D2D",
++-"+	c #D64937",
+++"+	c #1793d1",
++ "................",
++ "................",
++ "................",
++diff --git a/xfwm4/maximize-pressed.xpm b/xfwm4/maximize-pressed.xpm
++index 18cdb1b..de42a58 100644
++--- a/xfwm4/maximize-pressed.xpm
+++++ b/xfwm4/maximize-pressed.xpm
++@@ -3,7 +3,7 @@ static char * maximize_pressed_xpm[] = {
++ "16 16 3 1",
++ " 	c None",
++ ".	c #2D2D2D",
++-"+	c #B44335",
+++"+	c #137aae",
++ "................",
++ "................",
++ "................",
++diff --git a/xfwm4/themerc b/xfwm4/themerc
++index b9879cd..6c91b14 100644
++--- a/xfwm4/themerc
+++++ b/xfwm4/themerc
++@@ -6,7 +6,7 @@ active_text_color=#dcdcdc
++ inactive_text_color=#888888
++ button_offset=4
++ button_spacing=4
++-show_app_icon=true
+++show_app_icon=false
++ full_width_title=true
++ maximized_offset=4
++ title_horizontal_offset=6
++diff --git a/xfwm4/top-left-active.xpm b/xfwm4/top-left-active.xpm
++index 2d98285..2c7a63f 100644
++--- a/xfwm4/top-left-active.xpm
+++++ b/xfwm4/top-left-active.xpm
++@@ -4,7 +4,7 @@ static char * top_left_active_xpm[] = {
++ " 	c None",
++ ".	c #484848",
++ "+	c #2D2D2D",
++-" .",
+++"..",
++ ".+",
++ ".+",
++ ".+",
++diff --git a/xfwm4/top-left-inactive.xpm b/xfwm4/top-left-inactive.xpm
++index a4cfd1c..f27581c 100644
++--- a/xfwm4/top-left-inactive.xpm
+++++ b/xfwm4/top-left-inactive.xpm
++@@ -4,7 +4,7 @@ static char * top_left_inactive_xpm[] = {
++ " 	c None",
++ ".	c #393939",
++ "+	c #2D2D2D",
++-" .",
+++"..",
++ ".+",
++ ".+",
++ ".+",
++diff --git a/xfwm4/top-right-active.xpm b/xfwm4/top-right-active.xpm
++index 071710e..a75b4c1 100644
++--- a/xfwm4/top-right-active.xpm
+++++ b/xfwm4/top-right-active.xpm
++@@ -4,7 +4,7 @@ static char * top_right_active_xpm[] = {
++ " 	c None",
++ ".	c #484848",
++ "+	c #2D2D2D",
++-". ",
+++"..",
++ "+.",
++ "+.",
++ "+.",
++diff --git a/xfwm4/top-right-inactive.xpm b/xfwm4/top-right-inactive.xpm
++index 95e48e1..6acfc54 100644
++--- a/xfwm4/top-right-inactive.xpm
+++++ b/xfwm4/top-right-inactive.xpm
++@@ -4,7 +4,7 @@ static char * top_right_inactive_xpm[] = {
++ " 	c None",
++ ".	c #393939",
++ "+	c #2D2D2D",
++-". ",
+++"..",
++ "+.",
++ "+.",
++ "+.",
 --- a/xfwm4/close-prelight.xpm
 +++ b/xfwm4/close-prelight.xpm
 @@ -3,21 +3,21 @@ static char * close_prelight_xpm[] = {
@@ -322,8 +767,6 @@ index 250c7f8..6263abc 100644
  "................",
  "................",
  "................",
-diff --git a/xfwm4/close-pressed.xpm b/xfwm4/close-pressed.xpm
-index f7c47d5..962f1b5 100644
 --- a/xfwm4/close-pressed.xpm
 +++ b/xfwm4/close-pressed.xpm
 @@ -3,21 +3,21 @@ static char * close_pressed_xpm[] = {
@@ -363,8 +806,6 @@ index f7c47d5..962f1b5 100644
  "................",
  "................",
  "................",
-diff --git a/xfwm4/hide-prelight.xpm b/xfwm4/hide-prelight.xpm
-index 00568f4..f7e2a34 100644
 --- a/xfwm4/hide-prelight.xpm
 +++ b/xfwm4/hide-prelight.xpm
 @@ -3,7 +3,7 @@ static char * hide_prelight_xpm[] = {
@@ -376,8 +817,6 @@ index 00568f4..f7e2a34 100644
  "................",
  "................",
  "................",
-diff --git a/xfwm4/hide-pressed.xpm b/xfwm4/hide-pressed.xpm
-index b499d8b..718ecf4 100644
 --- a/xfwm4/hide-pressed.xpm
 +++ b/xfwm4/hide-pressed.xpm
 @@ -3,7 +3,7 @@ static char * hide_pressed_xpm[] = {
@@ -389,8 +828,6 @@ index b499d8b..718ecf4 100644
  "................",
  "................",
  "................",
-diff --git a/xfwm4/maximize-prelight.xpm b/xfwm4/maximize-prelight.xpm
-index 203179c..cd3cecf 100644
 --- a/xfwm4/maximize-prelight.xpm
 +++ b/xfwm4/maximize-prelight.xpm
 @@ -3,7 +3,7 @@ static char * maximize_prelight_xpm[] = {
@@ -402,8 +839,6 @@ index 203179c..cd3cecf 100644
  "................",
  "................",
  "................",
-diff --git a/xfwm4/maximize-pressed.xpm b/xfwm4/maximize-pressed.xpm
-index 18cdb1b..de42a58 100644
 --- a/xfwm4/maximize-pressed.xpm
 +++ b/xfwm4/maximize-pressed.xpm
 @@ -3,7 +3,7 @@ static char * maximize_pressed_xpm[] = {
@@ -415,8 +850,6 @@ index 18cdb1b..de42a58 100644
  "................",
  "................",
  "................",
-diff --git a/xfwm4/themerc b/xfwm4/themerc
-index b9879cd..6c91b14 100644
 --- a/xfwm4/themerc
 +++ b/xfwm4/themerc
 @@ -6,7 +6,7 @@ active_text_color=#dcdcdc
@@ -428,8 +861,6 @@ index b9879cd..6c91b14 100644
  full_width_title=true
  maximized_offset=4
  title_horizontal_offset=6
-diff --git a/xfwm4/top-left-active.xpm b/xfwm4/top-left-active.xpm
-index 2d98285..2c7a63f 100644
 --- a/xfwm4/top-left-active.xpm
 +++ b/xfwm4/top-left-active.xpm
 @@ -4,7 +4,7 @@ static char * top_left_active_xpm[] = {
@@ -441,8 +872,6 @@ index 2d98285..2c7a63f 100644
  ".+",
  ".+",
  ".+",
-diff --git a/xfwm4/top-left-inactive.xpm b/xfwm4/top-left-inactive.xpm
-index a4cfd1c..f27581c 100644
 --- a/xfwm4/top-left-inactive.xpm
 +++ b/xfwm4/top-left-inactive.xpm
 @@ -4,7 +4,7 @@ static char * top_left_inactive_xpm[] = {
@@ -454,8 +883,6 @@ index a4cfd1c..f27581c 100644
  ".+",
  ".+",
  ".+",
-diff --git a/xfwm4/top-right-active.xpm b/xfwm4/top-right-active.xpm
-index 071710e..a75b4c1 100644
 --- a/xfwm4/top-right-active.xpm
 +++ b/xfwm4/top-right-active.xpm
 @@ -4,7 +4,7 @@ static char * top_right_active_xpm[] = {
@@ -467,8 +894,6 @@ index 071710e..a75b4c1 100644
  "+.",
  "+.",
  "+.",
-diff --git a/xfwm4/top-right-inactive.xpm b/xfwm4/top-right-inactive.xpm
-index 95e48e1..6acfc54 100644
 --- a/xfwm4/top-right-inactive.xpm
 +++ b/xfwm4/top-right-inactive.xpm
 @@ -4,7 +4,7 @@ static char * top_right_inactive_xpm[] = {
