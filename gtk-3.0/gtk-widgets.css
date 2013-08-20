@@ -535,6 +535,7 @@ GtkIconView.view.cell:selected:focus {
     color: @theme_selected_fg_color;
 }
 
+.content-view.view.rubberband,
 .view.rubberband,
 .rubberband {
     border-width: 1px;
@@ -573,37 +574,109 @@ GtkInfoBar {
 .info {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@info_bg_color, 0.9);
+    border-color: shade(@info_bg_color, 0.8);
     background-color: @info_bg_color;
     background-image: none;
     color: @info_fg_color;
 }
 
+.info .button.close {
+    color: @info_fg_color;
+}
+
+.info .button.close:hover {
+    background-image: linear-gradient(to bottom,
+				      alpha(white, 0.3),
+				      alpha(white, 0.2) 30%,
+				      alpha(black, 0.02));
+}
+
+.info .button.close:active {
+    color: @info_fg_color;
+    background-image: linear-gradient(to bottom,
+				      alpha(black, 0.1),
+				      transparent);
+}
+
 .warning {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@warning_bg_color, 0.9);
+    border-color: shade(@warning_bg_color, 0.8);
     background-color: @warning_bg_color;
     background-image: none;
     color: @warning_fg_color;
 }
 
+.warning .button.close {
+    color: @warning_fg_color;
+}
+
+.warning .button.close:hover {
+    background-image: linear-gradient(to bottom,
+				      alpha(white, 0.3),
+				      alpha(white, 0.2) 30%,
+				      alpha(black, 0.02));
+}
+
+.warning .button.close:active {
+    color: @warning_fg_color;
+    background-image: linear-gradient(to bottom,
+				      alpha(black, 0.1),
+				      transparent);
+}
+
 .question {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@question_bg_color, 0.9);
+    border-color: shade(@question_bg_color, 0.8);
     background-color: @question_bg_color;
     background-image: none;
     color: @question_fg_color;
 }
 
+.question .button.close {
+    color: @question_fg_color;
+}
+
+.question .button.close:hover {
+    background-image: linear-gradient(to bottom,
+				      alpha(white, 0.3),
+				      alpha(white, 0.2) 30%,
+				      alpha(black, 0.02));
+}
+
+.question .button.close:active {
+    color: @question_fg_color;
+    background-image: linear-gradient(to bottom,
+				      alpha(black, 0.1),
+				      transparent);
+}
+
 .error {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@error_bg_color, 0.9);
+    border-color: shade(@error_bg_color, 0.8);
     background-color: @error_bg_color;
     background-image: none;
     color: @error_fg_color;
+}
+
+.error .button.close {
+    color: @error_fg_color;
+}
+
+.error .button.close:hover {
+    background-image: linear-gradient(to bottom,
+				      alpha(white, 0.3),
+				      alpha(white, 0.2) 30%,
+				      alpha(black, 0.02));
+}
+
+.error .button.close:active {
+    color: @error_fg_color;
+    background-image: linear-gradient(to bottom,
+				      alpha(black, 0.1),
+				      transparent);
 }
 
 /*******************
@@ -728,6 +801,10 @@ GtkComboBox .menu {
     border-width: 0;
     background-color: @menu_bg_color;
     background-image: none;
+}
+
+.context-menu {
+    font: regular;
 }
 
 /***********
@@ -865,6 +942,10 @@ GtkTreeMenu .menuitem * {
 
 .menuitem .accelerator:insensitive {
     color: alpha(mix(@menu_fg_color, @menu_bg_color, 0.5), 0.6);
+}
+
+GtkModelMenuItem GtkBox GtkImage {
+    padding-right: 4px;
 }
 
 /************
@@ -1109,6 +1190,15 @@ GtkLevelBar.vertical {
                 inset 0 -1px shade(@theme_bg_color, 0.85);
 }
 
+.scale.slider.fine-tune:active,
+.scale.slider.fine-tune:active:hover,
+.scale.slider.fine-tune.horizontal:active,
+.scale.slider.fine-tune.horizontal:active:hover {
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
 .scale.mark {
     border-color: shade(@theme_bg_color, 0.8);
 }
@@ -1194,6 +1284,12 @@ GtkLevelBar.vertical {
 .scrollbar.slider.vertical:active {
     border-color: shade(@theme_selected_bg_color, 0.9);
     background-color: @theme_selected_bg_color;
+}
+
+.scrollbar.slider.fine-tune:prelight:active {
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 
 /* overlay scrollbar */
