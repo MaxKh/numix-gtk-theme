@@ -299,7 +299,7 @@
     background-image: none;
 }
 
-.secondary-toolbar.toolbar .button:active:insensitive {
+.secondary-toolbar.toolbar .button:active *:insensitive {
     border-color: shade(@toolbar_bg_color, 0.75);
     background-color: shade(@toolbar_bg_color, 0.80);
     background-image: none;
@@ -352,7 +352,7 @@
     background-image: none;
 }
 
-.bottom-toolbar.toolbar .button:active:insensitive {
+.bottom-toolbar.toolbar .button:active *:insensitive {
     border-color: shade(@theme_bg_color, 0.75);
     background-color: shade(@theme_bg_color, 0.80);
     background-image: none;
@@ -386,10 +386,10 @@ GraniteWidgetsPopOver {
 
 .popover_bg {
     background-color: transparent;
-    background-image: -gtk-gradient(linear,
-                     left top, left bottom,
-                     from (@menu_bg_color),
-                     to (@menu_bg_color));
+    background-image: linear-gradient(to bottom,
+                                      @menu_bg_color,
+                                      @menu_bg_color
+                                      );
 }
 
 GraniteWidgetsPopOver .sidebar.view,
@@ -453,8 +453,8 @@ GraniteWidgetsPopOver .linked .button:last-child,
 GraniteWidgetsPopOver .linked .button:only-child,
 GraniteWidgetsPopOver .linked .button:insensitive:last-child,
 GraniteWidgetsPopOver .linked .button:insensitive:only-child,
-GraniteWidgetsPopOver .linked .button:active:insensitive:last-child,
-GraniteWidgetsPopOver .linked .button:active:insensitive:only-child {
+GraniteWidgetsPopOver .linked .button:active *:insensitive:last-child,
+GraniteWidgetsPopOver .linked .button:active *:insensitive:only-child {
     box-shadow: none;
 }
 
@@ -622,10 +622,10 @@ BirdieWidgetsTweetList * {
 
 .shadow {
     background-color: transparent;
-    background-image: -gtk-gradient(linear,
-                     left top, left bottom,
-                     from (rgba(0, 0, 0, 0.3)),
-                     to (transparent));
+    background-image: linear-gradient(to bottom,
+                                      rgba(0, 0, 0, 0.3),
+                                      transparent
+                                      );
 }
 
 .composited-indicator,
