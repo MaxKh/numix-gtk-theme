@@ -1,6 +1,6 @@
 # Numix GTK Theme
 
-gtk-color-scheme = "bg_color:#eeeeee\nfg_color:#555555\nbase_color:#ffffff\ntext_color:#333333\nselected_bg_color:#f0544c\nselected_fg_color:#ffffff\ntooltip_bg_color:#444444\ntooltip_fg_color:#eeeeee\ntitlebar_bg_color:#444444\ntitlebar_fg_color:#dddddd\nmenubar_bg_color:#444444\nmenubar_fg_color:#dddddd\ntoolbar_bg_color:#eeeeee\ntoolbar_fg_color:#555555\nmenu_bg_color:#444444\nmenu_fg_color:#dddddd\npanel_bg_color:#444444\npanel_fg_color:#dddddd\nlink_color:#f06860"
+gtk-color-scheme = "bg_color:#eeeeee\nfg_color:#555555\nbase_color:#ffffff\ntext_color:#333333\nselected_bg_color:#d64937\nselected_fg_color:#ffffff\ntooltip_bg_color:#2d2d2d\ntooltip_fg_color:#eeeeee\ntitlebar_bg_color:#2d2d2d\ntitlebar_fg_color:#dddddd\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dddddd\ntoolbar_bg_color:#eeeeee\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dddddd\npanel_bg_color:#2d2d2d\npanel_fg_color:#dddddd\nlink_color:#f06860"
 
 # Default Style
 
@@ -431,10 +431,10 @@ style "murrine-panel" = "murrine-thin" {
 	xthickness = 2
 
 	bg[NORMAL] = @panel_bg_color
-	bg[PRELIGHT] =  mix (0.21, @panel_fg_color, @panel_bg_color)
-	bg[SELECTED] =  mix (0.21, @panel_fg_color, @panel_bg_color)
-	bg[ACTIVE] = shade (0.8, @panel_bg_color)
-	bg[INSENSITIVE] = @panel_bg_color
+	bg[PRELIGHT] = shade (1.0, @selected_bg_color)
+	bg[SELECTED] = mix (0.6, @selected_bg_color, @panel_bg_color)
+	bg[ACTIVE] = mix (0.7, @selected_bg_color, @panel_bg_color)
+	bg[INSENSITIVE] = mix (0.21, @panel_fg_color, @panel_bg_color)
 
 	fg[NORMAL] = @panel_fg_color
 	fg[PRELIGHT] = shade (1.08, @panel_fg_color)
