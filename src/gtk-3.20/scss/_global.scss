@@ -4,7 +4,7 @@
 
 // default color scheme
 $bg_color: if($variant == "dark", #2d2d2d, #eee);
-$fg_color: if($variant == "dark", #ddd, #555);
+$fg_color: if($variant == "dark", #ddd, #202020);
 $base_color: if($variant == "dark", #333, #fff);
 $text_color: if($variant == "dark", #eee, #333);
 $selected_bg_color: #d64937;

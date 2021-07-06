@@ -326,7 +326,10 @@
             }
         }
 
-        &:focus, &:hover { color: $fg; }
+        &:focus, &:hover {
+            color: $fg;
+            background-color: #eaa49b;
+        }
 
         &:active:disabled, &:checked:disabled {
             @include linear-gradient(shade($button_bg, .9));
